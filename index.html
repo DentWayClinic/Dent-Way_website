@@ -4,56 +4,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dent Way Dental Clinic in Tirana, Albania. Discover dental implants, All-on-4, All-on-6 and smile restoration. Contact our team for a personalized treatment plan.">
-  <title>Dent Way | Dental Tourism in Albania</title>
+  <meta name="description" content="Dent Way dental tourism in Tirana, Albania. Dental implants, All-on-4, All-on-6, crowns and veneers. Contact our team for a consultation.">
+  <title>Dent Way | Premium Dental Tourism Albania</title>
   <style>
+    :root {
+      --black: #111111;
+      --white: #ffffff;
+      --gold: #d4af37;
+      --light: #f7f6f2;
+      --gray: #666666;
+    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: Arial, sans-serif; color: #183344; line-height: 1.6; }
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--white);
+      color: var(--black);
+      line-height: 1.7;
+    }
     a { text-decoration: none; }
-    .top { background: #103c4b; color: white; text-align: center; padding: 9px 15px; font-size: 13px; }
-    header { display: flex; justify-content: space-between; align-items: center; padding: 18px 7%; gap: 20px; }
-    .logo { color: #123f50; font-size: 26px; font-weight: 800; letter-spacing: 1px; }
-    .logo span { color: #19a99a; }
-    nav { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
-    nav a { color: #183344; font-size: 14px; }
-    .btn { display: inline-block; background: #12a596; color: white; padding: 13px 21px; border-radius: 6px; font-weight: bold; }
-    .hero { background: linear-gradient(120deg, #eaf7f6, #f4f8fb); padding: 85px 7%; display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: 45px; }
-    .eyebrow { color: #078e83; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 12px; }
-    h1 { font-size: clamp(36px, 5vw, 59px); line-height: 1.1; margin: 17px 0; color: #123f50; }
-    .hero p { font-size: 17px; max-width: 570px; margin-bottom: 25px; color: #506673; }
-    .hero-art { min-height: 300px; border-radius: 20px; background: linear-gradient(145deg, #c6ebe5, #e3f2f8); display: flex; align-items: center; justify-content: center; padding: 30px; }
-    .smile { font-size: 110px; text-align: center; }
-    .art-caption { text-align: center; font-weight: bold; color: #123f50; }
+    .top {
+      background: var(--black);
+      color: var(--gold);
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 13px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 7%;
+      gap: 20px;
+      background: var(--white);
+      border-bottom: 1px solid #eeeeee;
+    }
+    .logo {
+      color: var(--black);
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+    .logo span { color: var(--gold); }
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a { color: var(--black); font-size: 14px; }
+    nav a:hover { color: #a7861e; }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--black);
+      padding: 12px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin: 5px 5px 5px 0;
+      transition: .2s;
+    }
+    .btn:hover { background: #e5c85c; }
+    .btn-dark { background: var(--black); color: var(--white); }
+    .btn-dark:hover { background: #333333; }
+    .hero {
+      background: linear-gradient(120deg, #111111, #292721);
+      color: var(--white);
+      padding: 90px 7%;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      align-items: center;
+      gap: 45px;
+    }
+    .eyebrow {
+      color: var(--gold);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+    h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.15;
+      margin: 18px 0;
+    }
+    .hero p {
+      font-size: 17px;
+      max-width: 580px;
+      margin-bottom: 22px;
+      color: #e3e3e3;
+    }
+    .hero-art {
+      min-height: 290px;
+      border: 1px solid var(--gold);
+      border-radius: 14px;
+      background: #1b1b1b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      text-align: center;
+    }
+    .smile { font-size: 85px; }
+    .art-caption { color: var(--gold); font-weight: bold; }
     section { padding: 70px 7%; }
-    .section-title { text-align: center; max-width: 700px; margin: 0 auto 35px; }
-    h2 { color: #123f50; font-size: clamp(27px, 3vw, 38px); margin-bottom: 12px; }
-    .muted { color: #657782; }
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-    .card { border: 1px solid #e1ebee; padding: 27px; border-radius: 12px; background: white; }
-    .card .symbol { font-size: 31px; margin-bottom: 12px; }
-    .card h3 { margin-bottom: 9px; color: #123f50; }
-    .about { background: #f4f8fa; }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .section-title {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 35px;
+    }
+    h2 {
+      color: var(--black);
+      font-size: clamp(27px, 3vw, 38px);
+      margin-bottom: 12px;
+    }
+    .muted { color: var(--gray); }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .card {
+      border: 1px solid #e8e3d5;
+      padding: 27px;
+      border-radius: 10px;
+      background: var(--white);
+    }
+    .card .symbol { color: #b18b20; font-size: 31px; margin-bottom: 12px; }
+    .card h3 { margin-bottom: 9px; }
+    .about { background: var(--light); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
     .steps { display: grid; gap: 15px; }
-    .step { background: white; border-radius: 9px; padding: 17px; border-left: 4px solid #12a596; }
-    .contact { background: #103c4b; color: white; text-align: center; }
-    .contact h2 { color: white; }
-    .contact p { margin: 12px auto 24px; max-width: 620px; color: #e0edef; }
-    footer { background: #0b2e3a; color: #d6e3e6; text-align: center; padding: 25px 7%; font-size: 13px; }
-    .notice { font-size: 12px; color: #71818a; margin-top: 20px; }
+    .step {
+      background: var(--white);
+      border-radius: 7px;
+      padding: 17px;
+      border-left: 4px solid var(--gold);
+    }
+    .contact {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+    }
+    .contact h2 { color: var(--white); }
+    .contact p {
+      margin: 12px auto 22px;
+      max-width: 650px;
+      color: #dddddd;
+    }
+    .contact-details { margin-top: 25px; }
+    .contact-details a { color: var(--gold); }
+    footer {
+      background: #080808;
+      color: #dddddd;
+      text-align: center;
+      padding: 25px 7%;
+      font-size: 13px;
+    }
+    footer strong { color: var(--gold); }
+    .notice { font-size: 12px; margin-top: 20px; color: #bbbbbb; }
     @media(max-width: 760px) {
       header { align-items: flex-start; flex-direction: column; }
-      nav { gap: 13px; }
-      .hero, .about-grid { grid-template-columns: 1fr; padding-top: 50px; padding-bottom: 50px; }
-      .hero-art { min-height: 220px; }
+      nav { gap: 12px; }
+      .hero, .about-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 55px; padding-bottom: 55px; }
+      .hero-art { min-height: 200px; }
       .cards { grid-template-columns: 1fr; }
       section { padding: 50px 6%; }
     }
   </style>
 </head>
 <body>
-  <div class="top">Your smile, your journey — welcome to Tirana, Albania</div>
+  <div class="top">YOUR SMILE, YOUR JOURNEY — TIRANA, ALBANIA</div>
+
   <header>
     <a class="logo" href="#">DENT <span>WAY</span></a>
     <nav>
@@ -68,40 +197,42 @@
   <main>
     <section class="hero">
       <div>
-        <div class="eyebrow">Dental tourism · Tirana, Albania</div>
+        <div class="eyebrow">Dental Tourism · Tirana, Albania</div>
         <h1>A confident smile starts with the right team.</h1>
-        <p>Explore your dental treatment options with Dent Way. Our team can help you understand the process, arrange a consultation and plan your visit to Albania.</p>
-        <a class="btn" href="#contact">Discuss Your Smile</a>
+        <p>Discover your dental treatment options with Dent Way in Tirana, Albania. Contact our team to discuss your needs and plan your visit.</p>
+        <a class="btn" href="#contact">Request a Consultation</a>
+        <a class="btn btn-dark" href="tel:+355676938595">Call Us</a>
       </div>
       <div class="hero-art">
         <div>
-          <div class="smile">😁</div>
-          <div class="art-caption">Your smile. Our care.</div>
+          <div class="smile">✦</div>
+          <div class="art-caption">YOUR SMILE. OUR CARE.</div>
+          <p>Personalised dental care in Albania</p>
         </div>
       </div>
     </section>
 
     <section id="treatments">
       <div class="section-title">
-        <div class="eyebrow">Our services</div>
+        <div class="eyebrow">Our Services</div>
         <h2>Dental treatments tailored to you</h2>
-        <p class="muted">Every treatment plan depends on a professional dental assessment and your individual needs.</p>
+        <p class="muted">Treatment recommendations depend on a professional dental assessment and your individual needs.</p>
       </div>
       <div class="cards">
         <article class="card">
           <div class="symbol">✦</div>
           <h3>Dental Implants</h3>
-          <p class="muted">Discuss tooth replacement options and the implant systems that may be suitable for you.</p>
+          <p class="muted">Explore tooth replacement options and suitable implant systems with our clinical team.</p>
         </article>
         <article class="card">
           <div class="symbol">◈</div>
           <h3>All-on-4 &amp; All-on-6</h3>
-          <p class="muted">Explore full-arch rehabilitation options following a clinical examination and imaging review.</p>
+          <p class="muted">Discuss full-arch rehabilitation options following clinical examination and imaging review.</p>
         </article>
         <article class="card">
           <div class="symbol">✧</div>
           <h3>Crowns &amp; Veneers</h3>
-          <p class="muted">Learn about restorative and cosmetic options designed around your smile and dental health.</p>
+          <p class="muted">Explore restorative and cosmetic options designed around your smile and dental health.</p>
         </article>
       </div>
     </section>
@@ -111,29 +242,35 @@
         <div>
           <div class="eyebrow">Discover Albania</div>
           <h2>Your dental visit in Tirana</h2>
-          <p class="muted">Tirana offers an opportunity to combine dental care planning with a visit to Albania. Contact our team to discuss appointments, travel timing and the practical details of your stay.</p>
+          <p class="muted">Our team can help you discuss appointments, travel timing and practical details for your visit to Albania.</p>
         </div>
         <div class="steps" id="journey">
-          <div class="step"><strong>01 · Get in touch</strong><br><span class="muted">Tell us what treatment you are considering.</span></div>
-          <div class="step"><strong>02 · Share your records</strong><br><span class="muted">Provide relevant X-rays or scans for preliminary review.</span></div>
-          <div class="step"><strong>03 · Discuss your plan</strong><br><span class="muted">The clinical team can explain proposed treatment and costs.</span></div>
-          <div class="step"><strong>04 · Plan your visit</strong><br><span class="muted">Confirm appointments and travel arrangements with our team.</span></div>
+          <div class="step"><strong>01 · Get in touch</strong><br><span class="muted">Tell us about the treatment you are considering.</span></div>
+          <div class="step"><strong>02 · Share your records</strong><br><span class="muted">Ask our team how to securely share relevant dental images.</span></div>
+          <div class="step"><strong>03 · Discuss your plan</strong><br><span class="muted">Review proposed treatment and costs with the clinical team.</span></div>
+          <div class="step"><strong>04 · Plan your visit</strong><br><span class="muted">Discuss appointments and travel arrangements.</span></div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="contact">
-      <div class="eyebrow">Let's talk</div>
+      <div class="eyebrow">Let's Talk</div>
       <h2>Start your smile consultation</h2>
-      <p>Contact Dent Way to ask a question or discuss the next steps. Send us a message on WhatsApp to begin.</p>
-      <!-- Replace 000000000000 with your WhatsApp number, including country code, digits only. -->
-      <a class="btn" href="https://wa.me/000000000000" target="_blank" rel="noopener">Contact Us on WhatsApp</a>
-      <p class="notice">Please replace the sample WhatsApp number with your clinic's real number before sharing this website with patients.</p>
+      <p>Contact Dent Way to ask a question or discuss your dental treatment options in Tirana, Albania.</p>
+
+      <a class="btn" href="https://wa.me/355676938595" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a class="btn btn-dark" href="tel:+355676938595">Call +355 67 693 8595</a>
+
+      <div class="contact-details">
+        <p>Email: <a href="mailto:dentwaytourism@gmail.com">dentwaytourism@gmail.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/dent__way/" target="_blank" rel="noopener">@dent__way</a></p>
+      </div>
+      <p class="notice">Submitting an enquiry does not confirm an appointment or guarantee a specific treatment outcome.</p>
     </section>
   </main>
 
   <footer>
-    <strong>DENT WAY</strong> · Dental care in Tirana, Albania
+    <strong>DENT WAY</strong> · Dental Tourism in Tirana, Albania
     <p>All treatment recommendations and prices are subject to individual clinical assessment.</p>
     <p>© 2026 Dent Way. All rights reserved.</p>
   </footer>
